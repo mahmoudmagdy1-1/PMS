@@ -1,6 +1,6 @@
 <?php
 
-function readJson($filePath)
+function read_json($filePath)
 {
     if (!file_exists($filePath)) {
         return [];
@@ -9,9 +9,9 @@ function readJson($filePath)
     return json_decode($json, true);
 }
 
-function writeJson($file, $array)
+function write_json($file, $array)
 {
-    $data = readJson($file);
+    $data = read_json($file);
     $data[] = $array;
     file_put_contents($file, json_encode($data), JSON_PRETTY_PRINT);
 }

@@ -14,7 +14,13 @@ $basePath = dirname($_SERVER['PHP_SELF']);
                 <li class="nav-item"><a class="nav-link" href="<?php echo $basePath; ?>/about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo $basePath; ?>/contact">Contact</a></li>
             </ul>
-            <form class="d-flex" action="<?php echo $basePath; ?>/cart.php">
+            <form class="d-flex align-items-center">
+                <?php if (!isset($_SESSION["user"])): ?>
+                    <a class="nav-link me-4" href="<?php echo $basePath; ?>/login">Login</a>
+                    <a class="nav-link me-4" href="<?php echo $basePath; ?>/signup">Sign Up</a>
+                <?php else: ?>
+                    <a class="nav-link me-4" href="<?php echo $basePath; ?>/logout">Logout</a>
+                <?php endif; ?>
                 <button class="btn btn-outline-dark" type="submit">
                     <i class="bi-cart-fill me-1"></i>
                     Cart
