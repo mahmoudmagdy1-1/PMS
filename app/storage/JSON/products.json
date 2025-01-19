@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Iphone 12 Pro",
+        "price": 499.99,
+        "image": "https://media.ldlc.com/r1600/ld/products/00/05/81/97/LD0005819743_1.jpg",
+        "description": "This is the first product.",
+        "sale_percentage": 0
+    },
+    {
+        "id": "2",
+        "name": "Iphone 14",
+        "price": 599.99,
+        "image": "https://media.ldlc.com/r374/ld/products/00/06/06/39/LD0006063994.jpg",
+        "description": "This is the second product.",
+        "sale_percentage": 15
+    },
+    {
+        "id": "3",
+        "name": "Iphone 15",
+        "price": 699.99,
+        "image": "https://media.ldlc.com/r374/ld/products/00/05/97/72/LD0005977224.jpg",
+        "description": "This is the third product.",
+        "sale_percentage": 20
+    }
+]
