@@ -1,5 +1,5 @@
 <?php
-require_once("../app/models/json_handler.php");
+require_once("../app/helpers/json_handler.php");
 
 function get_all_goals()
 {

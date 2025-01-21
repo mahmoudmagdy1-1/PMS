@@ -1,0 +1,22 @@
+[
+    {
+        "name": "ahmed",
+        "email": "ahmed@email.com",
+        "address": "2 ali street",
+        "phone": "011241314223312",
+        "notes": "",
+        "cart": {
+            "user_id": 2,
+            "items": [
+                {
+                    "product_id": "2",
+                    "name": "Iphone 14",
+                    "price": 599.99,
+                    "quantity": "3",
+                    "subtotal": 1799.97
+                }
+            ],
+            "total": 1799.97
+        }
+    }
+]

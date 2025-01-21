@@ -1,0 +1,35 @@
+[
+    {
+        "user_id": 1,
+        "items": [
+            {
+                "product_id": "3",
+                "name": "Iphone 15",
+                "price": 699.99,
+                "quantity": "1",
+                "subtotal": 699.99
+            },
+            {
+                "product_id": 4,
+                "name": "Iphone 16",
+                "price": "899.99",
+                "quantity": "1",
+                "subtotal": 899.99
+            }
+        ],
+        "total": 1599.98
+    },
+    {
+        "user_id": 2,
+        "items": [
+            {
+                "product_id": 4,
+                "name": "Iphone 16",
+                "price": "899.99",
+                "quantity": "1",
+                "subtotal": 899.99
+            }
+        ],
+        "total": 899.99
+    }
+]

@@ -1,14 +1,8 @@
 [
     {
-        "name": "Mahmoud",
-        "email": "mahmoud@email.com",
-        "message": "Hey",
-        "timeStamp": "2025\/01\/19 02:00:02am"
-    },
-    {
-        "name": "ali",
-        "email": "ali@ali.com",
-        "message": "try again",
-        "timeStamp": "2025\/01\/19 02:01:23am"
+        "name": "Hossam",
+        "email": "hossam@email.com",
+        "message": "hey",
+        "timeStamp": "2025\/01\/21 12:26:37am"
     }
 ]

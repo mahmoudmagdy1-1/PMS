@@ -45,7 +45,7 @@ if (isset($_SESSION["user"])) {
                     </div>
                 </form>
                 <div class="text-center mt-3">
-                    <p>Already have an account? <a href="#">Log in</a></p>
+                    <p>Already have an account? <a href="login">Login</a></p>
                 </div>
             </div>
         </div>

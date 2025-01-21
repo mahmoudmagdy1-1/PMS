@@ -1,13 +1,13 @@
 <?php
-require_once("../app/models/json_handler.php");
+require_once("../app/helpers/json_handler.php");
+require_once("../app/helpers/general.php");
 
-function get_last_id()
+function get_last_user()
 {
-    $users = read_json("../app/storage/JSON/users.json");
-    return empty($users) ? 0 : end($users)['id'];
+    return get_last_id("../app/storage/JSON/users.json");
 }
 
 function insert_user($array)
 {
-    write_json("../app/storage/JSON/users.json", $array);
+    append_json("../app/storage/JSON/users.json", $array);
 }

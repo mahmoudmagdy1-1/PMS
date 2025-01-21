@@ -1,5 +1,6 @@
 <?php
-require_once("../app/models/product_model.php");
+require_once("../app/models/home_product_model.php");
+if (!isset($_SESSION['cart'])) $_SESSION['cart'] = ['user_id' => 0, 'items' => [], 'total' => 0];
 
 
 

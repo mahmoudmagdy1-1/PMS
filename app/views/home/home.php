@@ -33,14 +33,13 @@
                                         echo $product['price'] - ceil($product['price'] * $product['sale_percentage'] / 100)  . "$"; ?>
                                  <?php else: echo $product['price']  . "$"; ?>
                                  <?php endif; ?>
-
-
                              </div>
                          </div>
                          <!-- Product actions-->
-                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                         </div>
+                         <form class="add-to-cart-form card-footer p-4 pt-0 border-top-0 bg-transparent mx-auto" data-product-id="<?php echo $product['id']; ?>" method="POST">
+                             <input type="number" name="quantity" value="1" min="1" class=" mx-auto mb-2">
+                             <div class="text-center"><button type="button" class="btn btn-outline-dark mx-auto add-to-cart-button">Add to cart</button></div>
+                         </form>
                      </div>
                  </div>
              <?php endforeach; ?>

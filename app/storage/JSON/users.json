@@ -1,14 +1,16 @@
 [
     {
+        "id": 1,
         "name": "Mahmoud",
         "email": "mahmoud@email.com",
-        "password": "$2y$10$a1GCNSqMkA5WfBTVPUCy2e38j1BHzYfNJceoIx5957DqrIVnbvIom",
-        "id": 1
+        "password": "$2y$10$46cckCx7G8GvIYruMs1FPe4fURBTMNazuQD28stmBG49\/dgzzAXjK",
+        "role": "admin"
     },
     {
-        "name": "Ahmed",
-        "email": "ahmed@ahmed.com",
-        "password": "$2y$10$bOdyOcTLQvMRf6HhgA.bGOccSkZSG.v7cQwAzYwPUVWW\/cXayYRyG",
-        "id": 2
+        "id": 2,
+        "name": "ahmed",
+        "email": "ahmed@email.com",
+        "password": "$2y$10$y.1QCq3hynpWML5ZfU\/vcuEV8Pdx82O06Ius3KtkbVmfzdkHt8EaO",
+        "role": "user"
     }
 ]

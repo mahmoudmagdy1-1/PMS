@@ -1,7 +1,7 @@
 RewriteEngine On
 
 # Set the RewriteBase to the subdirectory
-RewriteBase /pms-front/public/
+RewriteBase /PMS-main/public/
 
 # Redirect all requests to index.php unless it's an existing file or directory
 RewriteCond %{REQUEST_FILENAME} !-f

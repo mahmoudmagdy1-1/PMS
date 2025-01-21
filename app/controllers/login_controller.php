@@ -1,7 +1,13 @@
 <?php
 require_once("../app/models/login_model.php");
+require_once("../app/models/auth_model.php");
+require_once("../app/models/cart_model.php");
 require_once("../app/helpers/validation.php");
 
+if (isset($_SESSION["user"])) {
+    header('Location: .');
+    exit;
+}
 
 function login_index()
 {
@@ -26,10 +32,12 @@ function login_index()
             if ($user['email'] == $email) {
                 if (password_verify($password, $user['password'])) {
                     $_SESSION["user"] = [
-                        'id' => $id,
-                        'name' => $name,
-                        'email' => $email,
+                        'id' => $user['id'],
+                        'name' => $user['name'],
+                        'email' => $user['email'],
+                        'role' => $user['role'],
                     ];
+                    migrate_cart($user['id']);
                     header('Location: .');
                     exit;
                 } else {
