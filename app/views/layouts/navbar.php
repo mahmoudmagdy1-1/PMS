@@ -10,7 +10,7 @@
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href=".">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
-                <?php if (isset($_SESSION["user"]) && $_SESSION["user"]["role"] == "admin"): ?>
+                <?php if (isset($_SESSION["user"]) && isset($_SESSION["user"]["role"]) && $_SESSION["user"]["role"] == "admin"): ?>
                     <li class="nav-item"><a class="nav-link" href="add-product">Add Product</a></li>
                 <?php endif; ?>
             </ul>
