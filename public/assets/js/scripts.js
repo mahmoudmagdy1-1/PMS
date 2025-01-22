@@ -68,7 +68,7 @@ function removeFromCart(productId, form) {
         },
         body: JSON.stringify({ product_id: productId })
     })
-    .then(response => {Debug raw response
+    .then(response => {
         return response.json();
     })
     .then(data => {
